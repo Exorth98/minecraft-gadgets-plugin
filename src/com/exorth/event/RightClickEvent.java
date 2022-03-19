@@ -1,5 +1,6 @@
 package com.exorth.event;
 
+import com.exorth.command.CanonGadget;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.entity.Snowball;
@@ -16,12 +17,19 @@ public class RightClickEvent implements Listener {
 
         Player p = event.getPlayer();
         Action a = event.getAction();
-        if ( a == Action.PHYSICAL || event.getItem() == null)
+
+        // Check event conformity
+        if (a == Action.PHYSICAL || event.getItem() == null)
             return;
 
+        // Check if item is a gadget
         ItemStack item = event.getItem();
-        Snowball snowball = p.launchProjectile(Snowball.class);
-        snowball.setCustomName("yoyo");
+        CanonGadget gadget = CanonGadget.getGadgetFromItem(item);
 
+        if (gadget != null){
+            // Launch a snaball from the player, with a special name (name of gadget)
+            Snowball snowball = p.launchProjectile(Snowball.class);
+            snowball.setCustomName(gadget.name());
+        }
     }
 }

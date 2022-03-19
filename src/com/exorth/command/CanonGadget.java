@@ -12,9 +12,9 @@ import java.util.List;
 
 public enum CanonGadget {
 
-    ANIMALCANON("animalcanon", "Animal Canon","Throws a random animal egg", Material.IRON_HORSE_ARMOR),
-    MONSTERCANON("monstercanon", "Monster Canon","Throws a random monster egg", Material.GOLDEN_HORSE_ARMOR),
-    CAPTURECANON("capturecanon", "Capture Canon","Capture any mob in an egg", Material.DIAMOND_HORSE_ARMOR);
+    ANIMAL_CANON("animalcanon", "Animal Canon","Throws a random animal egg", Material.IRON_HORSE_ARMOR),
+    MONSTER_CANON("monstercanon", "Monster Canon","Throws a random monster egg", Material.GOLDEN_HORSE_ARMOR),
+    CAPTURE_CANON("capturecanon", "Capture Canon","Capture any mob in an egg", Material.DIAMOND_HORSE_ARMOR);
 
     private final String commandArgName;
     private final String name;
@@ -28,6 +28,7 @@ public enum CanonGadget {
         this.material = material;
     }
 
+    // Build Itemstack for gadget
     public ItemStack buildItem(){
         ItemStack gadgetItem = new ItemStack(this.material, 1);
         ItemMeta gadgetMeta = gadgetItem.getItemMeta();
@@ -40,6 +41,7 @@ public enum CanonGadget {
         return gadgetItem;
     }
 
+    // Returuns all possible gadgets command args
     public static List<String> getGadgetCommands() {
         List<String> names = new ArrayList<>();
         for (CanonGadget gadget : values()) {
@@ -48,6 +50,7 @@ public enum CanonGadget {
         return names;
     }
 
+    // Small util function to display available gadget command args
     public static String getAvailableGadgetsUsage() {
         return String.join("/", getGadgetCommands());
     }
@@ -56,6 +59,18 @@ public enum CanonGadget {
         CanonGadget result = null;
         for (CanonGadget gadget : values()) {
             if (commandArg.equalsIgnoreCase(gadget.commandArgName)) {
+                result = gadget;
+            }
+        }
+        // Should never be null since commandArgs is from with getGadgetNames()
+        return result;
+    }
+
+    // Check if an Itemstack is representative of a gadget
+    public static CanonGadget getGadgetFromItem(ItemStack item) {
+        CanonGadget result = null;
+        for (CanonGadget gadget : values()) {
+            if (gadget.buildItem().isSimilar(item)) {
                 result = gadget;
             }
         }

@@ -43,6 +43,6 @@ public class GadgetCommand implements CommandExecutor {
         ItemStack gadgetItem = gadget.buildItem();
         p.getInventory().setItem(p.getInventory().firstEmpty(), gadgetItem);
 
-        return false;
+        return true;
     }
 }

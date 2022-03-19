@@ -1,0 +1,71 @@
+animals_prob:
+  sheep: 3
+  cow: 3
+  fox: 3
+  bat: 3
+  chicken: 3
+  cod: 3
+  ocelot: 3
+  pig: 3
+  snowman: 1
+  rabbit: 3
+  salmon: 1
+  mooshroom:
+  squid: 1
+  strider:
+  tropical_fish: 1
+  turtle: 1
+  villager:
+  wandering_trader: 1
+  pufferfish: 1
+  axolotl: 1
+  glow_squid: 1
+  donkey: 3
+  horse: 3
+  cat: 3
+  parrot: 3
+  mule: 3
+  skeleton_horse: 1
+  dolphin: 1
+  polar_bear: 3
+  trader_llama: 3
+  llama: 3
+  panda: 3
+  wolf: 3
+  bee: 3
+  iron_golem: 1
+  goat: 3
+
+monsters_prob:
+  spider: 4
+  cave_spider: 4
+  enderman: 4
+  piglin: 3
+  zombified_piglin: 3
+  evoker: 4
+  vindicator: 4
+  pillager: 4
+  ravager: 3
+  vex: 4
+  endermite: 2
+  guardian: 1
+  elder_guardian: 1
+  shulker: 2
+  husk: 3
+  stray: 3
+  phantom: 3
+  blaze: 3
+  creeper: 5
+  ghast: 3
+  magma_cube: 3
+  silverfish: 3
+  skeleton: 5
+  slime: 5
+  zombie: 5
+  zombie_villager: 5
+  drowned: 2
+  wither_skeleton: 3
+  witch: 2
+  hoglin: 1
+  zoglin: 1
+  piglin_brute: 1
