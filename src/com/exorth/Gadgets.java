@@ -39,7 +39,7 @@ public class Gadgets extends JavaPlugin {
     public void onDisable() {
         super.onDisable();
     }
-    
+
     public static Gadgets getInstance(){
         return instance;
     }
