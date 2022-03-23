@@ -36,7 +36,7 @@ An item can be retrieved using `/gagets animalcanon`
 When interacting with this item, it will throw a projectile spawning an animal where it hits.
 The animal will be randomly picked up using probabilities from the configuration file.
 
-*Bonus: Integrate a reloading delay appearing to the player.*
+-[ ] *Bonus: Integrate a reloading delay appearing to the player.*
 
 ### Monster canon
 An item can be retrieved using `/gagets monstercanon`
@@ -44,7 +44,7 @@ An item can be retrieved using `/gagets monstercanon`
 When interacting with this item, it will throw a projectile spawning a monster where it hits.
 The monster will be randomly picked up using probabilities from the configuration file.
 
-*Bonus: Integrate a reloading delay appearing to the player.*
+-[ ] *Bonus: Integrate a reloading delay appearing to the player.*
 
 ### Capture canon
 An item can be retrieved using `/gagets capturecanon`
@@ -52,5 +52,5 @@ An item can be retrieved using `/gagets capturecanon`
 When interacting with this item, it will throw a projectile capture any mob it hits.
 The mob will disappear and its egg will be dropped instead.
 
-*Bonus: Integrate a reloading delay appearing to the player.*
+-[ ] *Bonus: Integrate a reloading delay appearing to the player.*
 
