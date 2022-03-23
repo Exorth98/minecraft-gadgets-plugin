@@ -5,3 +5,4 @@ api-version: 1.13
 commands:
   gadgets:
     description: Gadgets command/gadget
+    permission: gadgets.getgadget

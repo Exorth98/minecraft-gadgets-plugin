@@ -1,6 +1,6 @@
-package com.exorth.util;
+package dev.exorth.gadgets.util;
 
-import com.exorth.Gadgets;
+import dev.exorth.gadgets.Gadgets;
 import org.bukkit.*;
 import org.bukkit.configuration.MemorySection;
 import org.bukkit.entity.EntityType;

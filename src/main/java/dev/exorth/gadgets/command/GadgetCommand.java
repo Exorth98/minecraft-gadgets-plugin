@@ -1,4 +1,4 @@
-package com.exorth.command;
+package dev.exorth.gadgets.command;
 
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;

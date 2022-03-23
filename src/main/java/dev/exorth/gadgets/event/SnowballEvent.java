@@ -1,8 +1,8 @@
-package com.exorth.event;
+package dev.exorth.gadgets.event;
 
-import com.exorth.Gadgets;
-import com.exorth.command.CanonGadget;
-import com.exorth.util.GadgetsHelpers;
+import dev.exorth.gadgets.Gadgets;
+import dev.exorth.gadgets.command.CanonGadget;
+import dev.exorth.gadgets.util.GadgetsHelpers;
 import org.bukkit.Color;
 import org.bukkit.Location;
 import org.bukkit.Material;
@@ -14,7 +14,6 @@ import org.bukkit.event.entity.ProjectileHitEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.projectiles.ProjectileSource;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Stream;
 

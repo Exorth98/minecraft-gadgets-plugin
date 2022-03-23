@@ -1,7 +1,6 @@
-package com.exorth.event;
+package dev.exorth.gadgets.event;
 
-import com.exorth.command.CanonGadget;
-import org.bukkit.Material;
+import dev.exorth.gadgets.command.CanonGadget;
 import org.bukkit.entity.Player;
 import org.bukkit.entity.Snowball;
 import org.bukkit.event.EventHandler;

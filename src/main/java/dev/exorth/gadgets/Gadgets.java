@@ -1,9 +1,9 @@
-package com.exorth;
+package dev.exorth.gadgets;
 
-import com.exorth.command.GadgetCommand;
-import com.exorth.event.RightClickEvent;
-import com.exorth.event.SnowballEvent;
-import com.exorth.util.GadgetsHelpers;
+import dev.exorth.gadgets.command.GadgetCommand;
+import dev.exorth.gadgets.event.RightClickEvent;
+import dev.exorth.gadgets.event.SnowballEvent;
+import dev.exorth.gadgets.util.GadgetsHelpers;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.EntityType;
 import org.bukkit.plugin.java.JavaPlugin;
