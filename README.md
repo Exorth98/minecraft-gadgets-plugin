@@ -1,23 +1,32 @@
 # Gadgets Minecraft plugin
 
 
-The goal is to develop a really basic plugin showing code abilities and practices while working on a Minecraft plugin.
+The goal is to develop a really basic plugin showing some code abilities and practices while working on a Minecraft plugin.
 
 ## Plugin Description
 
+**The project is build on top of PaperAPI and Maven.**
+
 The idea of this plugin is to develop one or more gadgets for in-game players to use.
 The project should involve:
-- Command(s)
-- Events
-- Configuration File
-- Sound/Particles
 
-Optionally, the project could involve more interesting but more time-consuming things, such as (and not limited to):
-Menus
-- Runnables
-- Animations
-- NPC interactions
-- More use case-related mechanics
+- [x] Command(s)
+- [x] Events
+- [x] Configuration File
+- [x] Basic effects/particles
+
+Examples of optional features the project could involve if putting extra time:
+- [ ] Menus
+- [ ] Runnables
+- [ ] Animations
+- [ ] NPC interactions
+- [ ] More use case-related mechanics
+
+## Testing plugin
+To test the plugin:
+ 1. Clone the repository
+ 2. Build the .jar using maven
+ 3. Use the .jar plugin on a server
 
 ## Gadgets
 
